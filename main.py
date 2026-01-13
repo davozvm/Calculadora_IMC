@@ -16,3 +16,10 @@ class CalculadoraPeso:
             return "Tienes sobrepeso ⚠️"
         else:
             return "Obesidad 🚨 ¡Cuidado!"
+
+peso = float(input("Ingresa tu peso en kg: "))
+altura = float(input("Ingresa tu altura en metros: "))
+
+calculadora = CalculadoraPeso(peso, altura)
+print(f"Tu IMC es: {calculadora.imc:.2f}")
+print(calculadora.mensaje())
